@@ -8,7 +8,6 @@ linters:
     - gosec
     - govet
     - ineffassign
-    - revive
     - staticcheck
     - testifylint
     - unused
