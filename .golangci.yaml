@@ -1,0 +1,25 @@
+---
+version: "2"
+linters:
+  enable:
+    - errcheck
+    - gocyclo
+    - goheader
+    - gosec
+    - govet
+    - ineffassign
+    - revive
+    - staticcheck
+    - testifylint
+    - unused
+  settings:
+    gocyclo:
+      min-complexity: 10
+    goheader:
+      template: |-
+        Copyright {{ YEAR }} Karel Van Hecke
+        SPDX-License-Identifier: Apache-2.0
+formatters:
+  enable:
+    - gofmt
+    - goimports
